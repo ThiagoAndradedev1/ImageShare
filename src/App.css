@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap");
+
+* {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+
+.align-items-center {
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+.d-flex {
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.btn-landing-page {
+  background-color: #6610f2 !important;
+  border-color: #6610f2;
+  border-radius: 80px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  min-width: 200px;
+  margin-bottom: 25px;
+  display: inline;
+}
+
+.btn-contact-page {
+  border-radius: 80px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: #6610f2 !important;
+  border-color: #6610f2 !important;
+}
+
+.btn-contact-page:hover {
+  background-color: crimson !important;
+  border-color: crimson !important;
+}
+
+.btn-circle.btn-xl {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-color: #007bff;
+}
+
+/* section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+} */
+/* 
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  position: relative;
+  max-width: 80px;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  display: inline-block;
+  color: black;
+  font-weight: 400;
+  margin-left: 40px;
+  text-decoration: none;
+} */
+
+.wave {
+  margin-top: 15px;
+  bottom: 0;
+  left: 0;
+}
+
+.btn-circle.btn-xl:hover {
+  transform: translateX(5px);
+}
+
+.about-background-img {
+  background-image: url("https://image.freepik.com/free-vector/flat-design-colorful-characters-welcoming_23-2148271988.jpg") !important;
+}
+
+.btn-landing-page:hover {
+  background-color: crimson !important;
+  border-color: crimson !important;
+}
+
+.bootstrap-navbar {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.logo-bootstrap-navbar {
+  position: relative;
+  max-width: 80px;
+}
+
+.navbar-items {
+  color: black;
+}
+
+.navbar-items:hover {
+  color: crimson !important;
+}
+
+.card-landing-page {
+  width: 18rem;
+  margin-bottom: 15px;
+}
+
+.toggleMenu {
+  visibility: hidden;
+}
+
+@media (max-width: 768px) {
+  .card-landing-page {
+    width: 22rem;
+    margin-bottom: 15px;
+  }
+
+  .btn-landing-page {
+    display: block;
+  }
+
+  .bootstrap-navbar {
+    padding: 20px 40px;
+  }
+
+  .logo-bootstrap-navbar {
+    position: relative;
+    max-width: 60px;
+  }
+
+  .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    visibility: visible;
+    opacity: 0;
+  }
+
+  .navbar-items {
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 0;
+    text-decoration: none;
+    font-size: 2em;
+    margin: 10px 0;
+  }
+
+  .navbar-items:hover {
+    color: #ed0223;
+  }
+
+  .toggleMenu {
+    /* color: black; */
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(/images/open-menu.svg);
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    z-index: 2;
+    cursor: pointer;
+    visibility: visible;
+  }
+
+  .toggleMenu.active {
+    background: url(/images/close.png);
+    /* background-color: yellow; */
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+  }
+
+  .navigation.active {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
