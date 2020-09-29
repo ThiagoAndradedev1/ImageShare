@@ -105,11 +105,11 @@ img .box.a {
   border-color: #007bff;
 }
 
-.wave {
-  width: 100%;
-  margin-bottom: 30px;
-  margin-bottom: 0px;
-}
+/* .wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+} */
 
 footer {
   margin: 0;
@@ -175,6 +175,14 @@ footer {
 
   .btn-landing-page {
     width: 100%;
+  }
+
+  .welcome-banner-text {
+    text-align: center;
+  }
+
+  .opinion-banner {
+    padding-right: 0;
   }
 
   .btn-how-to-store {
@@ -462,3 +470,42 @@ footer {
     opacity: 1;
   }
 }
+
+.welcome-banner {
+  background-color: rgb(112, 15, 107, 0.7);
+  /* background-image: linear-gradient(
+      319deg,
+      #9f00f5 0%,
+      #aa00ff 37%,
+      #c253fe 100%
+    ),
+    url("https://images.unsplash.com/photo-1500051638674-ff996a0ec29e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1392&q=80");
+  background-blend-mode: saturation; */
+  background-image: url("https://images.unsplash.com/photo-1500051638674-ff996a0ec29e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1392&q=80");
+  background-blend-mode: saturation;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+}
+
+.welcome-banner-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.opinion-banner {
+  background-color: #c253fe;
+  padding-left: 0;
+  background-size: cover;
+  /* padding-right: 0; */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px; */
+}
+
+/* .opinion-banner-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */

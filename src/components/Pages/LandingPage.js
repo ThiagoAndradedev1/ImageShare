@@ -6,14 +6,246 @@ import Card from "react-bootstrap/Card";
 const LandingPage = () => {
   return (
     <Fragment>
-      <section
+      <div className='welcome-banner'>
+        <div className='welcome-banner-text'>
+          <div
+            className='container'
+            style={{ marginTop: "100px", textAlign: "center" }}
+          >
+            <h1
+              style={{
+                fontSize: "3em",
+                textTransform: "uppercase",
+                fontWeight: "700",
+                letterSpacing: "1px",
+              }}
+            >
+              <span style={{ color: "	#696969" }}>Image</span>
+              <span style={{ color: "#6610f2" }}>Share</span>
+            </h1>
+            <p
+              style={{
+                fontSize: "1em",
+                color: "#fff",
+              }}
+            >
+              <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Quis veniam aperiam quasi voluptas soluta. Libero magni hic sequi
+              dignissimos quo vitae id voluptatibus sapiente, suscipit nostrum
+              officia. Consectetur, animi vel.
+              <br /> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Magni explicabo consequatur a reprehenderit unde sit, nam dolore
+              ab neque perspiciatis nesciunt enim voluptatem quis ducimus soluta
+              pariatur adipisci sunt totam!
+            </p>
+            <div>
+              <Link to='/images'>
+                {" "}
+                <Button
+                  style={{ marginTop: "25px" }}
+                  className='btn-landing-page'
+                >
+                  Armazenar
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          style={{ marginBottom: "85px", marginTop: "45px" }}
+          className='container'
+        >
+          <div className='row'>
+            <div className='col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0'>
+              <div>
+                <h4 style={{ color: "#6610f2" }}>Nosso Aplicativo</h4>
+                <h1
+                  style={{
+                    fontSize: "3.0em",
+                    color: "	#080808",
+                  }}
+                >
+                  Armazene imagens pelo celular
+                </h1>
+                <p
+                  style={{ color: "black", fontSize: "1.2em" }}
+                  className='margin-top-s'
+                >
+                  Whether you’re a full stack web developer, content author, or
+                  business professional – Solodev gives you the power to build,
+                  customize, and manage modules to boost your website.
+                </p>
+                <div>
+                  <Link to='/images'>
+                    {" "}
+                    <Button className='btn-landing-page'>Cadastrar</Button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className='col-md-6'>
+              <div>
+                <img
+                  alt='Web Studio'
+                  className='img-fluid'
+                  src='images/cellphone-img.svg'
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+      <div>
+        <div
+          className='container-fluid opinion-banner'
+          style={{ backgroundColor: "#c253fe" }}
+        >
+          <div className='row'>
+            <div className='col-md-6'>
+              <img
+                alt='Web Studio'
+                className='img-fluid'
+                src='https://images.unsplash.com/photo-1551495657-ca60b4e820e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80'
+              />
+            </div>
+            <div className='col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0'>
+              <div>
+                <h4 style={{ color: "#fff" }}>Sarah Jeni</h4>
+                <h1
+                  style={{
+                    fontSize: "3.0em",
+                    color: "	#080808",
+                    textShadow: "0 0 20px #white",
+                  }}
+                >
+                  Armazene imagens pelo celular
+                </h1>
+                <p
+                  style={{
+                    color: "black",
+                    fontSize: "1.2em",
+                    textShadow: "0 0 20px #white",
+                  }}
+                  className='margin-top-s'
+                >
+                  Whether you’re a full stack web developer, content author, or
+                  business professional – Solodev gives you the power to build,
+                  customize, and manage modules to boost your website.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          style={{ marginBottom: "85px", marginTop: "45px" }}
+          className='container'
+        >
+          <div className='row'>
+            <div className='col-md-6'>
+              <div>
+                <img
+                  alt='Web Studio'
+                  className='img-fluid'
+                  src='images/image-upload.svg'
+                />
+              </div>
+            </div>
+            <div className='col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0'>
+              <div>
+                <h4 style={{ color: "#6610f2" }}>Nosso Aplicativo</h4>
+                <h1
+                  style={{
+                    fontSize: "3.0em",
+                    color: "	#080808",
+                  }}
+                >
+                  Armazene imagens pelo celular
+                </h1>
+                <p
+                  style={{ color: "black", fontSize: "1.2em" }}
+                  className='margin-top-s'
+                >
+                  Whether you’re a full stack web developer, content author, or
+                  business professional – Solodev gives you the power to build,
+                  customize, and manage modules to boost your website.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+      <div
+        style={{
+          // maxHeight: "350px",
+          // height: "350px"
+          backgroundColor: "#c253fe",
+          marginBottom: "25px",
+        }}
+      >
+        <div
+          style={{
+            // display: "flex",
+            // justifyContent: "center",
+            // alignItems: "center",
+            textAlign: "center",
+          }}
+        >
+          <h1 style={{ color: "white" }}>Sobre Mim</h1>
+          <img src='images/avataaars.svg' alt='' />
+          <h3 style={{ marginTop: "25px" }} className='container'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            tempora tenetur illum perspiciatis, labore doloribus nisi ea
+            doloremque itaque eius saepe fugit nobis laboriosam, ab, mollitia
+            aut obcaecati tempore. Nulla?
+          </h3>
+          <div style={{ marginTop: "25px" }} className='container'>
+            <div className='row'>
+              <div className='col-sm'>
+                <img
+                  style={{ maxHeight: "100px", maxWidth: "100px" }}
+                  src='https://pluralsight2.imgix.net/paths/images/javascript-542e10ea6e.png'
+                  alt=''
+                />
+              </div>
+              <div className='col-sm'>
+                <img
+                  style={{ maxHeight: "100px", maxWidth: "100px" }}
+                  src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png'
+                  alt=''
+                />
+              </div>
+              <div className='col-sm'>
+                <img
+                  style={{ maxHeight: "100px", maxWidth: "100px" }}
+                  src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/C_Sharp_logo.svg/400px-C_Sharp_logo.svg.png'
+                  alt=''
+                />
+              </div>
+              <div className='col-sm'>
+                <img
+                  style={{ maxHeight: "100px", maxWidth: "100px" }}
+                  src='https://www.pulumi.com/logos/tech/dotnet.png'
+                  alt=''
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <section
         style={{
           marginBottom: "35px",
           marginTop: "55px",
         }}
         className='section mt-5'
-      >
-        <div>
+      > */}
+      {/* <div>
           <div style={{ marginBottom: "85px" }} className='container'>
             <div className='row'>
               <div className='col-md-6'>
@@ -54,8 +286,8 @@ const LandingPage = () => {
             </div>
           </div>
           <div></div>
-        </div>
-        <h3
+        </div> */}
+      {/* <h3
           className='text-upload-landing-page'
           style={{
             textAlign: "center",
@@ -113,8 +345,8 @@ const LandingPage = () => {
               </Card>
             </div>
           </div>
-        </div>
-        {/* <div
+        </div> */}
+      {/* <div
           style={{
             backgroundColor: "#6610f2",
             minHeight: "450px",
@@ -195,7 +427,7 @@ const LandingPage = () => {
             </div>
           </div>
         </div> */}
-        {/* <div
+      {/* <div
           style={{
             display: "flex",
             alignItems: "center",
@@ -235,7 +467,7 @@ const LandingPage = () => {
                   />
                 </div>
               </div> */}
-        {/* <div className='col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0'>
+      {/* <div className='col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0'>
                 <div>
                   <h3 style={{ color: "#FF4500" }}>Sarah Jeni</h3>
                   <h2
@@ -255,11 +487,11 @@ const LandingPage = () => {
                   </p>
                 </div>
               </div> */}
-        {/* </div>
+      {/* </div>
           </div>
           <div></div>
         </div> */}
-        {/* <div
+      {/* <div
           style={{
             backgroundColor: "#6610f2",
             minHeight: "450px",
@@ -340,7 +572,7 @@ const LandingPage = () => {
             </div>
           </div>
         </div> */}
-      </section>
+      {/* </section> */}
     </Fragment>
   );
 };
