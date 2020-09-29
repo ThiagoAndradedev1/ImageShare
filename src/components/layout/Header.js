@@ -21,7 +21,7 @@ const Header = () => {
                 letterSpacing: "1px",
               }}
             >
-              <span style={{ color: "#696969" }}>Image</span>
+              <span style={{ color: "	#696969" }}>Image</span>
               <span style={{ color: "#6610f2" }}>Share</span>
             </h6>
           </Navbar.Brand>

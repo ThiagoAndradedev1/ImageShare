@@ -6,6 +6,7 @@ import Form from "react-bootstrap/Form";
 import validate from "../../../src/Form/ModalForm/validateInfo";
 import useForm from "../../../src/Form/ModalForm/useForm";
 import { CardDeck } from "react-bootstrap";
+import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
 
 const ImageUpload = () => {
@@ -31,6 +32,9 @@ const ImageUpload = () => {
             marginTop: "40px",
           }}
         >
+          <h3 style={{ textAlign: "center", marginTop: "15px" }}>
+            Adicione Imagens
+          </h3>
           <Card.Body>
             <div style={{ marginBottom: "85px" }} className='container'>
               <div className='row'>
@@ -52,7 +56,6 @@ const ImageUpload = () => {
                     />
                   </div>
                 </div>
-                <div className='vl'></div>
                 <div className='col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0'>
                   <Form onSubmit={handleSubmit}>
                     <Form.Group controlId='formBasicEmail'>
@@ -108,8 +111,7 @@ const ImageUpload = () => {
                       )}
                     </div>
                     <div className='mb-3 text-center'>
-                      {/* <Link to='/images'>
-                        {" "} */}
+                      {/* <Link to='/images'> */}{" "}
                       <Button
                         style={{
                           backgroundColor: "#6610f2",

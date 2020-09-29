@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import APIContext from "./imageApiContext";
 import axios from "axios";
 
@@ -10,14 +10,13 @@ const ImageApiState = ({ children }) => {
   const api = axios.create({ baseURL: "http://localhost:5000/api" });
 
   const getAllData = async () => {
-    setConnectionErrorMsg(false);
-    setIsLoading(true);
     try {
+      setConnectionErrorMsg(false);
+      setIsLoading(true);
       let response = await api.get("/ImageUpload");
       if (response.data.length > 0) {
         setImageInfo(response.data);
       }
-      setIsLoading(false);
     } catch {
       setIsLoading(false);
       setConnectionErrorMsg(true);
@@ -25,8 +24,8 @@ const ImageApiState = ({ children }) => {
   };
 
   const addImage = async (title, description, imageFile) => {
-    setIsLoading(true);
     try {
+      setIsLoading(true);
       const fd = new FormData();
 
       fd.append("title", title);
@@ -43,8 +42,8 @@ const ImageApiState = ({ children }) => {
   };
 
   const deleteImage = async (id) => {
-    setIsLoading(true);
     try {
+      setIsLoading(true);
       await api.delete(`/imageUpload/${id}`);
       setImageInfo(imageInfo.filter((img) => img.imageId !== id));
       setIsLoading(false);

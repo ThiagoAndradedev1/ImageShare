@@ -1,5 +1,6 @@
 import { useState, useContext, useRef } from "react";
 import imageApiContext from "../../../src/context/api/imageApiContext";
+import { useHistory } from "react-router-dom";
 
 const useForm = (validate, setShowUploadModal) => {
   const [values, setValues] = useState({
@@ -11,6 +12,8 @@ const useForm = (validate, setShowUploadModal) => {
   const myImage = useRef(undefined);
 
   const { addImage } = useContext(imageApiContext);
+
+  const history = useHistory();
 
   const [errors, setErrors] = useState({});
 
@@ -29,9 +32,11 @@ const useForm = (validate, setShowUploadModal) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const image = myImage.current.files[0];
-    setErrors(validate(values, image));
-    if (Object.keys(errors).length === 0) {
+    const errorsInside = validate(values, image);
+    setErrors(errorsInside);
+    if (Object.keys(errorsInside).length === 0) {
       addImage(values.title, values.description, image);
+      history.push("/images");
     }
   };
 

@@ -7,11 +7,12 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Alert from "react-bootstrap/Alert";
 import { Link } from "react-router-dom";
-
+import { toast } from "react-toastify";
 import imageApiContext from "../../context/api/imageApiContext";
 import Spinner from "../../components/layout/Spinner";
 import useForm from "../../../src/Form/ModalForm/useForm";
 import validate from "../../../src/Form/ModalForm/validateInfo";
+toast.configure();
 
 const Images = () => {
   const [showUploadModal, setShowUploadModal] = useState(false);
@@ -54,6 +55,16 @@ const Images = () => {
     console.log(imageInfo);
     setModalInfo(imageInfo);
     setLgShow(true);
+  };
+
+  const notifyDeleteMsg = () => {
+    toast.success("✔️ Imagem deletada com successo...");
+  };
+
+  const removeImage = () => {
+    deleteImage(modalInfo.imageId);
+    notifyDeleteMsg();
+    setLgShow(false);
   };
 
   return (
@@ -223,7 +234,7 @@ const Images = () => {
           <Button
             style={{ backgroundColor: "red", borderColor: "red" }}
             variant='primary'
-            onClick={() => deleteImage(modalInfo.imageId)}
+            onClick={() => removeImage()}
           >
             Delete Image
           </Button>
@@ -240,8 +251,14 @@ const Images = () => {
             página.
           </Alert>
         )}
+        {imageInfo.length === 0 && !isLoading && (
+          <h3 style={{ textAlign: "center", marginTop: "25px" }}>
+            Não existe nenhuma imagem para exibir.
+          </h3>
+        )}
         <div className='img-grid'>
           {imageInfo.length > 0 &&
+            !isLoading &&
             imageInfo.map((info) => {
               return (
                 <div key={info.imageId} className='img-wrap'>

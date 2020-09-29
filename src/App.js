@@ -7,6 +7,8 @@ import Contact from "./components/Pages/Contact";
 import ImageUpload from "./components/Pages/ImageUpload";
 import ImageApiState from "./context/api/ImageApiState";
 import Footer from "./components/layout/Footer";
+// import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   BrowserRouter as Router,
@@ -15,8 +17,11 @@ import {
   Redirect,
 } from "react-router-dom";
 import "./App.css";
+// toast.configure();
 
 const App = () => {
+  // toast.configure();
+
   return (
     <Fragment>
       <ImageApiState>
