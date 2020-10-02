@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from "react";
 import APIContext from "./imageApiContext";
 import axios from "axios";
+import { useHistory } from "react-router-dom";
 
 const ImageApiState = ({ children }) => {
   const [imageInfo, setImageInfo] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [successMsg, setSuccessMsg] = useState(false);
+  const [currentImage, setCurrentImage] = useState();
   const [connectionErrorMsg, setConnectionErrorMsg] = useState(false);
 
   const api = axios.create({ baseURL: "http://localhost:5000/api" });
+
+  const history = useHistory();
 
   const getAllData = async () => {
     try {
@@ -17,6 +22,7 @@ const ImageApiState = ({ children }) => {
       if (response.data.length > 0) {
         setImageInfo(response.data);
       }
+      setIsLoading(false);
     } catch {
       setIsLoading(false);
       setConnectionErrorMsg(true);
@@ -36,6 +42,8 @@ const ImageApiState = ({ children }) => {
 
       setImageInfo([...imageInfo, response.data]);
       setIsLoading(false);
+      setCurrentImage(response.data);
+      setSuccessMsg(true);
     } catch {
       setIsLoading(false);
     }
@@ -58,6 +66,9 @@ const ImageApiState = ({ children }) => {
         isLoading,
         imageInfo,
         connectionErrorMsg,
+        successMsg,
+        currentImage,
+        setSuccessMsg,
         addImage,
         getAllData,
         deleteImage,

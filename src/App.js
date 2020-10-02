@@ -6,10 +6,10 @@ import About from "./components/Pages/About";
 import Contact from "./components/Pages/Contact";
 import ImageUpload from "./components/Pages/ImageUpload";
 import ImageApiState from "./context/api/ImageApiState";
-import Footer from "./components/layout/Footer";
-// import { toast } from "react-toastify";
+import Footer from "../src/components/layout/Footer";
 import "react-toastify/dist/ReactToastify.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ImageDetails from "./components/Pages/ImageDetails";
 import {
   BrowserRouter as Router,
   Switch,
@@ -36,8 +36,13 @@ const App = () => {
             <Route exact path='/about' component={About} />
             <Route exact path='/contact' component={Contact} />
             <Route exact path='/imageupload' component={ImageUpload} />
+            <Route
+              exact
+              path='/image-details/:imageId'
+              component={ImageDetails}
+            />
           </Switch>
-          {/* <Footer /> */}
+          <Footer />
         </Router>
       </ImageApiState>
     </Fragment>

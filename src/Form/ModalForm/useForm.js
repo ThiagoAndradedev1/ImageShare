@@ -11,7 +11,7 @@ const useForm = (validate, setShowUploadModal) => {
 
   const myImage = useRef(undefined);
 
-  const { addImage } = useContext(imageApiContext);
+  const { addImage, imageInfo } = useContext(imageApiContext);
 
   const history = useHistory();
 
@@ -36,7 +36,7 @@ const useForm = (validate, setShowUploadModal) => {
     setErrors(errorsInside);
     if (Object.keys(errorsInside).length === 0) {
       addImage(values.title, values.description, image);
-      history.push("/images");
+      // history.push("/images");
     }
   };
 

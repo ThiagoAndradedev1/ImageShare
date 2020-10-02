@@ -20,8 +20,11 @@ const LandingPage = () => {
                 letterSpacing: "1px",
               }}
             >
-              <span style={{ color: "	#696969" }}>Image</span>
-              <span style={{ color: "#6610f2" }}>Share</span>
+              {/* <span style={{ color: "	#696969" }}>Image</span> */}
+              <span style={{ color: "#fff" }}>Image</span>
+
+              {/* <span style={{ color: "#6610f2" }}>Share</span> */}
+              <span style={{ color: "#C253FE" }}>Share</span>
             </h1>
             <p
               style={{
@@ -38,6 +41,17 @@ const LandingPage = () => {
               ab neque perspiciatis nesciunt enim voluptatem quis ducimus soluta
               pariatur adipisci sunt totam!
             </p>
+            {/* <div>
+              <Link to='/images'>
+                {" "}
+                <Button
+                  style={{ marginTop: "25px" }}
+                  className='btn-landing-page'
+                >
+                  Armazenar
+                </Button>
+              </Link>
+            </div> */}
             <div>
               <Link to='/images'>
                 {" "}
@@ -60,18 +74,23 @@ const LandingPage = () => {
           <div className='row'>
             <div className='col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0'>
               <div>
-                <h4 style={{ color: "#6610f2" }}>Nosso Aplicativo</h4>
+                {/* <h4 style={{ color: "#6610f2" }}>Nosso Aplicativo</h4> */}
+                <h4 style={{ color: "#c253fe" }} className='align-text-center'>
+                  Nosso Aplicativo
+                </h4>
+
                 <h1
                   style={{
                     fontSize: "3.0em",
                     color: "	#080808",
                   }}
+                  className='align-text-center'
                 >
                   Armazene imagens pelo celular
                 </h1>
                 <p
                   style={{ color: "black", fontSize: "1.2em" }}
-                  className='margin-top-s'
+                  className='margin-top-s align-text-center'
                 >
                   Whether you’re a full stack web developer, content author, or
                   business professional – Solodev gives you the power to build,
@@ -113,23 +132,29 @@ const LandingPage = () => {
             </div>
             <div className='col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0'>
               <div>
-                <h4 style={{ color: "#fff" }}>Sarah Jeni</h4>
+                <h4
+                  className='align-text-center'
+                  style={{ color: "#540094", fontSize: "2.0em" }}
+                >
+                  Sarah Jeni
+                </h4>
                 <h1
                   style={{
                     fontSize: "3.0em",
-                    color: "	#080808",
+                    color: "#fff",
                     textShadow: "0 0 20px #white",
                   }}
+                  className='align-text-center'
                 >
                   Armazene imagens pelo celular
                 </h1>
                 <p
                   style={{
-                    color: "black",
+                    color: "#Fff",
                     fontSize: "1.2em",
                     textShadow: "0 0 20px #white",
                   }}
-                  className='margin-top-s'
+                  className='margin-top-s align-text-center'
                 >
                   Whether you’re a full stack web developer, content author, or
                   business professional – Solodev gives you the power to build,
@@ -157,18 +182,23 @@ const LandingPage = () => {
             </div>
             <div className='col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0'>
               <div>
-                <h4 style={{ color: "#6610f2" }}>Nosso Aplicativo</h4>
+                {/* <h4 style={{ color: "#6610f2" }}>Nosso Aplicativo</h4> */}
+                <h4 style={{ color: "#c253fe" }} className='align-text-center'>
+                  Nosso Aplicativo
+                </h4>
+
                 <h1
                   style={{
                     fontSize: "3.0em",
                     color: "	#080808",
                   }}
+                  className='align-text-center'
                 >
                   Armazene imagens pelo celular
                 </h1>
                 <p
                   style={{ color: "black", fontSize: "1.2em" }}
-                  className='margin-top-s'
+                  className='margin-top-s align-text-center'
                 >
                   Whether you’re a full stack web developer, content author, or
                   business professional – Solodev gives you the power to build,
@@ -180,31 +210,33 @@ const LandingPage = () => {
         </div>
         <div></div>
       </div>
-      <div
+      {/* <div
         style={{
-          // maxHeight: "350px",
-          // height: "350px"
           backgroundColor: "#c253fe",
-          marginBottom: "25px",
+          // marginBottom: "25px",
         }}
       >
         <div
           style={{
-            // display: "flex",
-            // justifyContent: "center",
-            // alignItems: "center",
             textAlign: "center",
+            marginBottom: "25px",
           }}
         >
-          <h1 style={{ color: "white" }}>Sobre Mim</h1>
+          <h1 style={{ color: "#540094", paddingTop: "25px" }}>Sobre Mim</h1>
           <img src='images/avataaars.svg' alt='' />
-          <h3 style={{ marginTop: "25px" }} className='container'>
+          <h3
+            style={{ marginTop: "25px", color: "#Fff", paddingBottom: "35px" }}
+            className='container'
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
             tempora tenetur illum perspiciatis, labore doloribus nisi ea
             doloremque itaque eius saepe fugit nobis laboriosam, ab, mollitia
             aut obcaecati tempore. Nulla?
           </h3>
-          <div style={{ marginTop: "25px" }} className='container'>
+          <div
+            style={{ marginTop: "25px", paddingBottom: "25px" }}
+            className='container'
+          >
             <div className='row'>
               <div className='col-sm'>
                 <img
@@ -216,21 +248,130 @@ const LandingPage = () => {
               <div className='col-sm'>
                 <img
                   style={{ maxHeight: "100px", maxWidth: "100px" }}
-                  src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png'
+                  src='https://www.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png'
                   alt=''
                 />
               </div>
               <div className='col-sm'>
                 <img
                   style={{ maxHeight: "100px", maxWidth: "100px" }}
-                  src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/C_Sharp_logo.svg/400px-C_Sharp_logo.svg.png'
+                  src='https://pluralsight.imgix.net/paths/path-icons/csharp-e7b8fcd4ce.png'
                   alt=''
                 />
               </div>
               <div className='col-sm'>
                 <img
                   style={{ maxHeight: "100px", maxWidth: "100px" }}
-                  src='https://www.pulumi.com/logos/tech/dotnet.png'
+                  src='https://miro.medium.com/max/512/1*5fQvZr2W6ydJ1fxjLgwhcg.png'
+                  alt=''
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> */}
+      <div>
+        <div
+          className='container-fluid opinion-banner'
+          style={{ backgroundColor: "#c253fe" }}
+        >
+          <div className='row'>
+            <div className='col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0'>
+              <div>
+                <h4
+                  className='align-text-center'
+                  style={{ color: "#540094", fontSize: "2.0em" }}
+                >
+                  Sarah Jeni
+                </h4>
+                <h1
+                  style={{
+                    fontSize: "3.0em",
+                    color: "#fff",
+                    textShadow: "0 0 20px #white",
+                  }}
+                  className='align-text-center'
+                >
+                  Armazene imagens pelo celular
+                </h1>
+                <p
+                  style={{
+                    color: "#Fff",
+                    fontSize: "1.2em",
+                    textShadow: "0 0 20px #white",
+                  }}
+                  className='margin-top-s align-text-center'
+                >
+                  Whether you’re a full stack web developer, content author, or
+                  business professional – Solodev gives you the power to build,
+                  customize, and manage modules to boost your website.
+                </p>
+              </div>
+            </div>
+            <div className='col-md-6'>
+              <img
+                alt='Web Studio'
+                className='img-fluid'
+                src='images/about-me.svg'
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        style={
+          {
+            // marginBottom: "25px",
+          }
+        }
+      >
+        <div
+          style={{
+            textAlign: "center",
+            marginBottom: "25px",
+          }}
+        >
+          <h1 style={{ color: "#C253FE", paddingTop: "25px" }}>Sobre Mim</h1>
+          <img src='images/avataaars.svg' alt='' />
+          <h3
+            style={{ marginTop: "25px", color: "black", paddingBottom: "35px" }}
+            className='container'
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            tempora tenetur illum perspiciatis, labore doloribus nisi ea
+            doloremque itaque eius saepe fugit nobis laboriosam, ab, mollitia
+            aut obcaecati tempore. Nulla?
+          </h3>
+          <div
+            style={{ marginTop: "25px", paddingBottom: "25px" }}
+            className='container'
+          >
+            <div className='row'>
+              <div className='col-sm'>
+                <img
+                  style={{ maxHeight: "100px", maxWidth: "100px" }}
+                  src='https://pluralsight2.imgix.net/paths/images/javascript-542e10ea6e.png'
+                  alt=''
+                />
+              </div>
+              <div className='col-sm'>
+                <img
+                  style={{ maxHeight: "100px", maxWidth: "100px" }}
+                  src='https://www.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png'
+                  alt=''
+                />
+              </div>
+              <div className='col-sm'>
+                <img
+                  style={{ maxHeight: "100px", maxWidth: "100px" }}
+                  src='https://pluralsight.imgix.net/paths/path-icons/csharp-e7b8fcd4ce.png'
+                  alt=''
+                />
+              </div>
+              <div className='col-sm'>
+                <img
+                  style={{ maxHeight: "100px", maxWidth: "100px" }}
+                  src='https://miro.medium.com/max/512/1*5fQvZr2W6ydJ1fxjLgwhcg.png'
                   alt=''
                 />
               </div>

@@ -70,14 +70,26 @@ const Images = () => {
   return (
     <Fragment>
       <div style={{ textAlign: "center" }}>
-        <h1 style={{ color: "#696969" }}>Galeria de Imagens</h1>
+        <h1
+          style={{
+            textTransform: "uppercase",
+            fontWeight: "700",
+            letterSpacing: "1px",
+            textAlign: "center",
+            marginBottom: "35px",
+          }}
+        >
+          <span style={{ color: "black" }}>Galeria de </span>
+          <span style={{ color: "#C253FE" }}>Imagens</span>
+        </h1>
+        {/* <h1 style={{ color: "#696969" }}>Galeria de Imagens</h1> */}
         <p>Armazene suas imagens e tenha acesso após o upload completo.</p>
         <Link to='/imageupload'>
           {" "}
           <Button
             // onClick={handleShowUploadModal}
             type='button'
-            style={{ backgroundColor: "#6610f2", borderColor: "#6610f2" }}
+            style={{ backgroundColor: "#c253fe", borderColor: "#c253fe" }}
             className='btn btn-default btn-circle btn-xl'
           >
             +
@@ -186,15 +198,90 @@ const Images = () => {
       >
         <h3
           style={{
+            textTransform: "uppercase",
+            fontWeight: "700",
+            letterSpacing: "1px",
+            textAlign: "center",
+            marginBottom: "35px",
+            marginTop: "25px",
+          }}
+        >
+          <span style={{ color: "black" }}>Detalhes da </span>
+          <span style={{ color: "#C253FE" }}>Imagem</span>
+        </h3>
+        {/* <h3
+          style={{
             textAlign: "center",
             marginTop: "15px",
             color: "#696969",
           }}
         >
           Detalhes da Imagem
-        </h3>
+        </h3> */}
         <Modal.Body>
           {" "}
+          {/* <div class='container'>
+            <div class='row'>
+              <div class='col-sm'>
+                {modalInfo && (
+                  <img
+                    alt='img'
+                    src={`http://localhost:5000/images/${modalInfo.imageName}`}
+                    className='img-fluid img-upload'
+                  />
+                )}
+              </div>
+              
+              <div class='col-sm'>
+                {modalInfo && (
+                  <div>
+                    <h2
+                      style={{
+                        color: "#696969",
+                        textAlign: "center",
+                      }}
+                    >
+                      {modalInfo.title}
+                    </h2>
+                    <p className='margin-top-s'>{modalInfo.description}</p>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div> */}
+          {/* <div className='row'>
+            <div className='col-md-8 d-flex justify-content-center'>
+              <div>
+                {modalInfo && (
+                  <img
+                    // style={{
+                    //   minHeight: "250px",
+                    //   maxWidth: "450px",
+                    //   maxHeight: "600px",
+                    // }}
+                    alt='img'
+                    src={`http://localhost:5000/images/${modalInfo.imageName}`}
+                    className='img-fluid img-upload'
+                  />
+                )}
+              </div>
+            </div>
+            <div className='col-md-4 align-items-center'>
+              {modalInfo && (
+                <div>
+                  <h2
+                    style={{
+                      color: "#696969",
+                      fontSize: "3.0em",
+                    }}
+                  >
+                    {modalInfo.title}
+                  </h2>
+                  <p className='margin-top-s'>{modalInfo.description}</p>
+                </div>
+              )}
+            </div>
+          </div> */}
           <section className='section mt-5'>
             <div className='container'>
               <div className='row'>
@@ -251,7 +338,7 @@ const Images = () => {
             página.
           </Alert>
         )}
-        {imageInfo.length === 0 && !isLoading && (
+        {imageInfo.length === 0 && !isLoading && !connectionErrorMsg && (
           <h3 style={{ textAlign: "center", marginTop: "25px" }}>
             Não existe nenhuma imagem para exibir.
           </h3>

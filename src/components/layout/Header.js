@@ -21,8 +21,8 @@ const Header = () => {
                 letterSpacing: "1px",
               }}
             >
-              <span style={{ color: "	#696969" }}>Image</span>
-              <span style={{ color: "#6610f2" }}>Share</span>
+              <span style={{ color: "#fff" }}>Image</span>
+              <span style={{ color: "#C253FE" }}>Share</span>
             </h6>
           </Navbar.Brand>
           <div
@@ -42,13 +42,13 @@ const Header = () => {
               </Nav.Link>
             </Navbar.Brand>
             <Navbar.Brand>
-              <Nav.Link className='navbar-items' as={Link} to='/about'>
-                About
+              <Nav.Link className='navbar-items' as={Link} to='/imageupload'>
+                Upload
               </Nav.Link>
             </Navbar.Brand>
             <Navbar.Brand>
-              <Nav.Link className='navbar-items' as={Link} to='/contact'>
-                Contact
+              <Nav.Link className='navbar-items' as={Link}>
+                GitHub
               </Nav.Link>
             </Navbar.Brand>
           </ul>

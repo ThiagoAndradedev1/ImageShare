@@ -7,14 +7,16 @@ const validateInfo = (values, image) => {
     errors.title = "Você precisa escolher um título para a imagem.";
   } else if (values.title.length > 15) {
     errors.title = "Você chegou ao limite de caracteres para o título.";
+  } else if (values.title.length < 5) {
+    errors.title = "Você precisa digitar mais de cinco caracteres";
   }
 
   if (!values.description) {
     errors.description = "Você precisa escrever uma descrição para a imagem.";
-  } else if (values.description.length > 100) {
+  } else if (values.description.length > 200) {
     errors.description =
       "Você chegou ao limite de caracteres para a descrição.";
-  } else if (values.description.length < 1) {
+  } else if (values.description.length < 50) {
     errors.description = "Você precisa escrever no mínimo 50 caracteres";
   }
 

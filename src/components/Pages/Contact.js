@@ -5,7 +5,62 @@ import { Button } from "react-bootstrap";
 const Contact = () => {
   return (
     <Fragment>
-      <section className='section mt-5'>
+      <div>
+        <div
+          className='container-fluid opinion-banner'
+          style={{ backgroundColor: "#c253fe" }}
+        >
+          <div className='row'>
+            <div className='col-lg-6'>
+              <img
+                alt='Web Studio'
+                className='img-fluid'
+                src='images/about-me.svg'
+              />
+            </div>
+            <div
+              className='col-lg-6 contact-me-form'
+              style={{ marginTop: "100px" }}
+            >
+              <div style={{ textAlign: "center" }}>
+                <h4
+                  className='align-text-center'
+                  style={{
+                    color: "#540094",
+                    fontSize: "2.0em",
+                    marginBottom: "25px",
+                  }}
+                >
+                  Envie uma Mensagem
+                </h4>
+                <Form>
+                  <Form.Group controlId='formBasicEmail'>
+                    <Form.Control type='email' placeholder='Enter email' />
+                  </Form.Group>
+
+                  <Form.Group controlId='formBasicPassword'>
+                    <Form.Control type='password' placeholder='Password' />
+                  </Form.Group>
+
+                  <Form.Group controlId='exampleForm.ControlTextarea1'>
+                    <Form.Control as='textarea' rows='3' />
+                  </Form.Group>
+
+                  <Button
+                    className='btn-contact-page'
+                    variant='primary'
+                    // type="text"
+                    style={{ marginBottom: "25px" }}
+                  >
+                    Enviar
+                  </Button>
+                </Form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <section className='section mt-5'>
         <div className='container'>
           <div className='row'>
             <div className='col-md-6'>
@@ -54,7 +109,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </Fragment>
   );
 };
