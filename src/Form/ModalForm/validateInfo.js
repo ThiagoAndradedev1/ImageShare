@@ -6,7 +6,7 @@ const validateInfo = (values, image) => {
   if (!values.title) {
     errors.title = "Você precisa escolher um título para a imagem.";
   } else if (values.title.length > 15) {
-    errors.title = "Você chegou ao limite de caracteres para o título.";
+    errors.title = "Você chegou ao limite de 15 caracteres para o título.";
   } else if (values.title.length < 5) {
     errors.title = "Você precisa digitar mais de cinco caracteres";
   }

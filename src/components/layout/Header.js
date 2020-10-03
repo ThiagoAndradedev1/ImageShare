@@ -1,59 +1,57 @@
 import React, { Fragment, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [toggleActive, setToggleActive] = useState(false);
-
   return (
     <Fragment>
-      <div>
-        <Navbar className='bootstrap-navbar' variant='light'>
-          <Navbar.Brand href='#home'>
-            <h6
-              className='logo-bootstrap-navbar'
-              style={{
-                fontSize: "1em",
-                textTransform: "uppercase",
-                fontWeight: "700",
-                letterSpacing: "1px",
-              }}
+      <Navbar className='nav-test' bg='light' expand='lg'>
+        <Navbar.Brand href='#home'>
+          <h3
+            style={{
+              fontSize: "1em",
+              textTransform: "uppercase",
+              fontWeight: "700",
+              letterSpacing: "1px",
+            }}
+          >
+            <span style={{ color: "#383838" }}>Image</span>
+            <span style={{ color: "#C253FE" }}>Share</span>
+          </h3>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls='basic-navbar-nav' />
+        <Navbar.Collapse id='basic-navbar-nav'>
+          <Nav className='ml-auto'>
+            <Nav.Link className='nav-items-test' as={Link} to='/landingpage'>
+              Home
+            </Nav.Link>
+            <Nav.Link
+              className='nav-items-test'
+              as={Link}
+              to='/images'
+              eventKey={2}
             >
-              <span style={{ color: "#fff" }}>Image</span>
-              <span style={{ color: "#C253FE" }}>Share</span>
-            </h6>
-          </Navbar.Brand>
-          <div
-            style={{ color: "black" }}
-            onClick={() => setToggleActive(!toggleActive)}
-            className={toggleActive ? "toggleMenu active" : "toggleMenu"}
-          ></div>
-          <ul className={toggleActive ? "navigation active" : "navigation"}>
-            <Navbar.Brand>
-              <Nav.Link className='navbar-items' as={Link} to='/landingpage'>
-                Home
-              </Nav.Link>
-            </Navbar.Brand>
-            <Navbar.Brand>
-              <Nav.Link className='navbar-items' as={Link} to='/images'>
-                Images
-              </Nav.Link>
-            </Navbar.Brand>
-            <Navbar.Brand>
-              <Nav.Link className='navbar-items' as={Link} to='/imageupload'>
-                Upload
-              </Nav.Link>
-            </Navbar.Brand>
-            <Navbar.Brand>
-              <Nav.Link className='navbar-items' as={Link}>
-                GitHub
-              </Nav.Link>
-            </Navbar.Brand>
-          </ul>
-        </Navbar>
-      </div>
+              Images
+            </Nav.Link>
+            <Nav.Link
+              className='nav-items-test'
+              as={Link}
+              to='/imageupload'
+              eventKey={2}
+            >
+              Upload
+            </Nav.Link>
+            <Nav.Link
+              className='nav-items-test'
+              href='https://github.com/ThiagoAndradedev1'
+              eventKey={2}
+            >
+              Github
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     </Fragment>
   );
 };

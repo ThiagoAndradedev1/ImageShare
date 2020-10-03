@@ -49,19 +49,6 @@ const ImageUpload = () => {
                 Imagem adicionada com sucesso ! Acesse as{" "}
                 <Link to='/images'>imagens.</Link>
               </Alert>
-
-              // <h4
-              //   style={{
-              //     textAlign: "center",
-              //     marginBottom: "35px",
-              //   }}
-              // >
-              //   <span style={{ color: "black" }}>Imagem adicionada com </span>
-              //   <span style={{ color: "	#32CD32" }}>sucesso ! </span>
-              //   <span style={{ color: "black" }}>
-              //     Acesse as <Link to='/images'>imagens.</Link>
-              //   </span>
-              // </h4>
             )}
             <div className='row'>
               <div className='col-lg-6 c d-flex justify-content-center'>
@@ -138,13 +125,7 @@ const ImageUpload = () => {
                   </div>
                   <div className='mb-3 text-center'>
                     {/* <Link to='/images'> */}{" "}
-                    <Button
-                      style={{
-                        backgroundColor: " black",
-                        borderColor: " black",
-                      }}
-                      type='submit'
-                    >
+                    <Button className='btn-style' type='submit'>
                       Enviar
                     </Button>
                     {/* </Link> */}
