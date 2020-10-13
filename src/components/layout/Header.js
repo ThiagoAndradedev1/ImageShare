@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <Fragment>
-      <Navbar className='nav-test' bg='light' expand='lg'>
+      <Navbar className='nav' bg='light' expand='lg'>
         <Navbar.Brand href='#home'>
           <h3
             style={{
@@ -23,11 +23,11 @@ const Header = () => {
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='ml-auto'>
-            <Nav.Link className='nav-items-test' as={Link} to='/landingpage'>
+            <Nav.Link className='nav-items' as={Link} to='/landingpage'>
               Home
             </Nav.Link>
             <Nav.Link
-              className='nav-items-test'
+              className='nav-items'
               as={Link}
               to='/images'
               eventKey={2}
@@ -35,7 +35,7 @@ const Header = () => {
               Images
             </Nav.Link>
             <Nav.Link
-              className='nav-items-test'
+              className='nav-items'
               as={Link}
               to='/imageupload'
               eventKey={2}
@@ -43,7 +43,7 @@ const Header = () => {
               Upload
             </Nav.Link>
             <Nav.Link
-              className='nav-items-test'
+              className='nav-items'
               href='https://github.com/ThiagoAndradedev1'
               eventKey={2}
             >

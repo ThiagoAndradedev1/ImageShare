@@ -1,5 +1,3 @@
-import React from "react";
-
 const validateInfo = (values, image) => {
   let errors = {};
 
@@ -15,7 +13,7 @@ const validateInfo = (values, image) => {
     errors.description = "Você precisa escrever uma descrição para a imagem.";
   } else if (values.description.length > 200) {
     errors.description =
-      "Você chegou ao limite de caracteres para a descrição.";
+      "Você chegou ao limite de 200 caracteres para a descrição.";
   } else if (values.description.length < 50) {
     errors.description = "Você precisa escrever no mínimo 50 caracteres";
   }

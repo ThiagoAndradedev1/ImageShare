@@ -1,8 +1,13 @@
-import React from "react";
+import React, { Fragment, useContext } from "react";
+import imageApiContext from "../../context/api/imageApiContext";
 
 const Footer = () => {
+  const { isLoading } = useContext(imageApiContext);
+
+
   return (
-    <footer className='page-footer font-small blue'>
+    <Fragment>
+      {!isLoading && <footer className='page-footer font-small blue'>
       <div className='footer-copyright text-center py-3'>
         © 2020 Copyright:{" "}
         <h3
@@ -17,7 +22,8 @@ const Footer = () => {
           <span style={{ color: "#C253FE" }}>Share</span>
         </h3>
       </div>
-    </footer>
+    </footer>}
+    </Fragment>
   );
 };
 

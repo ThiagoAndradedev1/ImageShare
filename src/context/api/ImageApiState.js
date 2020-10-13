@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import APIContext from "./imageApiContext";
 import axios from "axios";
-import { useHistory } from "react-router-dom";
 
 const ImageApiState = ({ children }) => {
   const [imageInfo, setImageInfo] = useState([]);
@@ -11,8 +10,6 @@ const ImageApiState = ({ children }) => {
   const [connectionErrorMsg, setConnectionErrorMsg] = useState(false);
 
   const api = axios.create({ baseURL: "http://localhost:5000/api" });
-
-  const history = useHistory();
 
   const getAllData = async () => {
     try {

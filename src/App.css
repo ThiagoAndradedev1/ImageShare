@@ -53,25 +53,6 @@
   background: #ccc;
 }
 
-/* .container-
-img .box.a {
-  grid-row: span 2;
-}
-
-.
-
-.container-img .box.b {
-  grid-column: span 2;
-}
-
-.container-img .box.c {
-  grid-row: span 2;
-}
-
-.container-img .box.d {
-  grid-row: span 2;
-} */
-
 .imgs {
   max-width: 70rem;
   margin: 4rem auto;
@@ -90,25 +71,9 @@ img .box.a {
   border-color: #007bff;
 }
 
-.about-background-img {
-  background-image: url("https://image.freepik.com/free-vector/flat-design-colorful-characters-welcoming_23-2148271988.jpg") !important;
-}
-
 .btn-style:hover {
   background-color: black !important;
   border-color: black !important;
-}
-
-.navbar-items {
-  color: black;
-}
-
-.navbar-items:hover {
-  color: crimson !important;
-}
-
-.toggleMenu {
-  visibility: hidden;
 }
 
 @media (max-width: 768px) {
@@ -154,19 +119,16 @@ img .box.a {
   margin-left: 0.75rem;
 }
 
-/* image grid styles */
 .img-grid {
   margin: 20px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* grid-gap: 40px; */
   gap: 40px;
 }
 .img-wrap {
   overflow: hidden;
   height: 0;
   padding: 50% 0;
-  /* padding controls height, will always be perfectly square regardless of width */
   position: relative;
   opacity: 0.8;
 }
@@ -378,21 +340,12 @@ img .box.a {
   padding-bottom: 45px;
 }
 
-.footer-test {
-  background: #333;
-  color: white;
-  padding: 3em;
-  margin-top: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.nav-test {
+.nav {
   background-color: white !important;
 }
 
-.nav-items-test {
-  padding-left: 40px !important;
+.nav-items {
+  /* padding-left: 40px !important; */
   font-size: 1.5em !important;
   color: #383838 !important;
 }

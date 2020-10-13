@@ -79,10 +79,7 @@ const LandingPage = () => {
                   customize, and manage modules to boost your website.
                 </p>
                 <div>
-                  <Link to='/images'>
-                    {" "}
-                    <Button className='btn-style'>Cadastrar</Button>
-                  </Link>
+                    <Button className='btn-style'>Cadastrar</Button>  
                 </div>
               </div>
             </div>
@@ -109,7 +106,7 @@ const LandingPage = () => {
               <img
                 alt='Web Studio'
                 className='img-fluid'
-                src='https://images.unsplash.com/photo-1551495657-ca60b4e820e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80'
+                src='images/sarah.jpg'
               />
             </div>
             <div className='col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0'>
@@ -128,7 +125,7 @@ const LandingPage = () => {
                   }}
                   className='align-text-center'
                 >
-                  Armazene imagens pelo celular
+                 Melhor site de imagens
                 </h1>
                 <p
                   style={{
@@ -138,9 +135,7 @@ const LandingPage = () => {
                   }}
                   className='margin-top-s align-text-center'
                 >
-                  Whether you’re a full stack web developer, content author, or
-                  business professional – Solodev gives you the power to build,
-                  customize, and manage modules to boost your website.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam doloremque vel voluptatem expedita nisi quis, labore optio suscipit maiores odio minima nesciunt explicabo ex, numquam repudiandae veniam fugit commodi id?
                 </p>
               </div>
             </div>
@@ -158,14 +153,14 @@ const LandingPage = () => {
                 <img
                   alt='Web Studio'
                   className='img-fluid'
-                  src='images/image-upload.svg'
+                  src='images/profiles.svg'
                 />
               </div>
             </div>
             <div className='col-md-6 col-lg-5 ml-auto d-flex align-items-center mt-4 mt-md-0'>
               <div>
                 <h4 style={{ color: "#c253fe" }} className='align-text-center'>
-                  Nosso Aplicativo
+                  Nosso site
                 </h4>
 
                 <h1
@@ -175,7 +170,7 @@ const LandingPage = () => {
                   }}
                   className='align-text-center'
                 >
-                  Armazene imagens pelo celular
+                  Arquive sua imagem agora
                 </h1>
                 <p
                   style={{ color: "black", fontSize: "1.2em" }}
@@ -203,7 +198,7 @@ const LandingPage = () => {
                   className='align-text-center'
                   style={{ color: "#540094", fontSize: "2.0em" }}
                 >
-                  Sarah Jeni
+                  Successo
                 </h4>
                 <h1
                   style={{
@@ -213,7 +208,7 @@ const LandingPage = () => {
                   }}
                   className='align-text-center'
                 >
-                  Armazene imagens pelo celular
+                  Temos uma equipe campeã
                 </h1>
                 <p
                   style={{
@@ -233,7 +228,7 @@ const LandingPage = () => {
               <img
                 alt='Web Studio'
                 className='img-fluid'
-                src='images/about-me.svg'
+                src='images/success.svg'
               />
             </div>
           </div>
@@ -247,7 +242,7 @@ const LandingPage = () => {
           }}
         >
           <h1 style={{ color: "#C253FE", paddingTop: "25px" }}>Sobre Mim</h1>
-          <img src='images/avataaars.svg' alt='' />
+          <img src='images/avatar.svg' alt='' />
           <h3
             style={{ marginTop: "25px", color: "black", paddingBottom: "35px" }}
             className='container'
@@ -265,28 +260,28 @@ const LandingPage = () => {
               <div className='col-sm'>
                 <img
                   style={{ maxHeight: "100px", maxWidth: "100px" }}
-                  src='https://pluralsight2.imgix.net/paths/images/javascript-542e10ea6e.png'
+                  src='images/Javascript.png'
                   alt=''
                 />
               </div>
               <div className='col-sm'>
                 <img
                   style={{ maxHeight: "100px", maxWidth: "100px" }}
-                  src='https://www.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png'
+                  src='images/React.png'
                   alt=''
                 />
               </div>
               <div className='col-sm'>
                 <img
                   style={{ maxHeight: "100px", maxWidth: "100px" }}
-                  src='https://pluralsight.imgix.net/paths/path-icons/csharp-e7b8fcd4ce.png'
+                  src='images/CSharp.png'
                   alt=''
                 />
               </div>
               <div className='col-sm'>
                 <img
                   style={{ maxHeight: "100px", maxWidth: "100px" }}
-                  src='https://miro.medium.com/max/512/1*5fQvZr2W6ydJ1fxjLgwhcg.png'
+                  src='images/dotnetcore.png'
                   alt=''
                 />
               </div>

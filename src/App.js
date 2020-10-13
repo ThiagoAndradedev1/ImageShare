@@ -2,14 +2,11 @@ import React, { Fragment } from "react";
 import LandingPage from "./components/Pages/LandingPage";
 import Images from "./components/Pages/Images";
 import Header from "./components/layout/Header";
-import About from "./components/Pages/About";
-import Contact from "./components/Pages/Contact";
 import ImageUpload from "./components/Pages/ImageUpload";
 import ImageApiState from "./context/api/ImageApiState";
 import Footer from "../src/components/layout/Footer";
 import "react-toastify/dist/ReactToastify.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ImageDetails from "./components/Pages/ImageDetails";
 import {
   BrowserRouter as Router,
   Switch,
@@ -17,10 +14,8 @@ import {
   Redirect,
 } from "react-router-dom";
 import "./App.css";
-// toast.configure();
 
 const App = () => {
-  // toast.configure();
 
   return (
     <Fragment>
@@ -33,14 +28,7 @@ const App = () => {
             </Route>
             <Route exact path='/landingpage' component={LandingPage} />
             <Route exact path='/images' component={Images} />
-            <Route exact path='/about' component={About} />
-            <Route exact path='/contact' component={Contact} />
             <Route exact path='/imageupload' component={ImageUpload} />
-            <Route
-              exact
-              path='/image-details/:imageId'
-              component={ImageDetails}
-            />
           </Switch>
           <Footer />
         </Router>

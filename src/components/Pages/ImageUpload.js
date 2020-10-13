@@ -62,7 +62,7 @@ const ImageUpload = () => {
                     src={
                       file
                         ? URL.createObjectURL(file)
-                        : "https://fronteimoveis.com.br/wp-content/themes/fronte-theme/assets/img/placeholder-header.jpg"
+                        : "images/placeholder-image.jpg"
                     }
                     className='img-fluid img-upload'
                     alt={file ? file.name : null}
@@ -124,11 +124,9 @@ const ImageUpload = () => {
                     )}
                   </div>
                   <div className='mb-3 text-center'>
-                    {/* <Link to='/images'> */}{" "}
                     <Button className='btn-style' type='submit'>
                       Enviar
                     </Button>
-                    {/* </Link> */}
                   </div>
                 </Form>
               </div>

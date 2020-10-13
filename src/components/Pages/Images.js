@@ -6,8 +6,6 @@ import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import imageApiContext from "../../context/api/imageApiContext";
 import Spinner from "../../components/layout/Spinner";
-import useForm from "../../../src/Form/ModalForm/useForm";
-import validate from "../../../src/Form/ModalForm/validateInfo";
 toast.configure();
 
 const Images = () => {
@@ -21,23 +19,12 @@ const Images = () => {
     deleteImage,
   } = useContext(imageApiContext);
 
-  // const handleCloseUploadModal = () => {
-  //   setShowUploadModal(false);
-  //   values.title = "";
-  //   values.description = "";
-  //   errors.title = "";
-  //   errors.description = "";
-  //   errors.fileinput = "";
-  // };
-  // const handleShowUploadModal = () => setShowUploadModal(true);
-
   useEffect(() => {
     getAllData();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const setInfoModal = (imageInfo) => {
-    console.log(imageInfo);
     setModalInfo(imageInfo);
     setLgShow(true);
   };
